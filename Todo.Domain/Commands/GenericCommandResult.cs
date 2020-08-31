@@ -15,7 +15,6 @@ namespace Todo.Domain.Commands
             this.Success = success;
             this.Message = message;
             this.Data = data;
-
         }
     }
 }
