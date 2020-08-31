@@ -9,7 +9,7 @@ namespace Todo.Domain.Entities
         public DateTime Date { get; private set; }
         public string User { get; private set; }
 
-        public TodoItem(string title, bool done, DateTime date, string user)
+        public TodoItem(string title, DateTime date, string user)
         {
             this.Title = title;
             this.Done = false;
