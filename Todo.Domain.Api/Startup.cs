@@ -9,7 +9,7 @@ using Todo.Domain.Infra.Contexts;
 using Todo.Domain.Infra.Repositories;
 using Todo.Domain.Repositories;
 
-namespace Todo.Api
+namespace Todo.Domain.Api
 {
     public class Startup
     {
