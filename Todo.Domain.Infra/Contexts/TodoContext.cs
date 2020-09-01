@@ -21,6 +21,5 @@ namespace Todo.Domain.Infra.Contexts
             modelBuilder.Entity<TodoItem>().Property(x => x.Date);
             modelBuilder.Entity<TodoItem>().Property(b => b.User);
         }
-        
     }
 }
