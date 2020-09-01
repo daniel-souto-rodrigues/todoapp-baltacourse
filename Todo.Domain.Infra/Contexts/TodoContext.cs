@@ -19,7 +19,7 @@ namespace Todo.Domain.Infra.Contexts
             modelBuilder.Entity<TodoItem>().Property(x => x.Title).HasMaxLength(160).HasColumnType("varchar(160)");
             modelBuilder.Entity<TodoItem>().Property(x => x.Done).HasColumnType("bit");
             modelBuilder.Entity<TodoItem>().Property(x => x.Date);
-            modelBuilder.Entity<TodoItem>().Property(b => b.User);
+            modelBuilder.Entity<TodoItem>().HasIndex(b => b.User);
         }
     }
 }
