@@ -89,7 +89,7 @@ namespace Todo.Domain.Api.Controllers
             return (GenericCommandResult)handler.Handle(command);
         }
 
-        [Route("mark-as-done")]
+        [Route("mark-as-undone")]
         [HttpPut]
         public GenericCommandResult MarkAsUndone([FromBody] MarkTodoAsUndoneCommand command, [FromServices] TodoHandler handler)
         {
