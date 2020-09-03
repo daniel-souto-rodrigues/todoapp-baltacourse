@@ -34,11 +34,11 @@ namespace Todo.Domain.Api
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
             {
-                options.Authority = "http://securetoken.google.com/todo-5b7f3";
+                options.Authority = "https://securetoken.google.com/todo-5b7f3";
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuer = true,
-                    ValidIssuer = "http://securetoken.google.com/todo-5b7f3",
+                    ValidIssuer = "https://securetoken.google.com/todo-5b7f3",
                     ValidateAudience = true,
                     ValidAudience = "todo-5b7f3",
                     ValidateLifetime = true
